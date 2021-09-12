@@ -1,0 +1,210 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --primario: purple;
+    --blanco: white;
+    --negro: black;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*1rem = 10px*/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+
+/*Globales*/
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-contenido {
+    max-width: 110rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(143, 143, 143, 0.53);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(143, 143, 143, 0.53);
+    box-shadow: 0px 5px 15px 0px rgba(143, 143, 143, 0.53);
+    background-color: white;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*Utilidades*/
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.centrar-img {
+    margin: 0 auto;
+}
+
+.img-referencia {
+    font-size: 1.2rem;
+}
+
+
+/*Header*/
+
+.header {
+    background-image: url(../img/wallhaven-4yovyx.png);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header__texto {
+    color: var(--blanco);
+}
+
+
+/*navegacion*/
+
+.navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: gray;
+    padding: 1rem;
+}
+
+.navegacion__link {
+    color: white;
+}
+
+
+/*index*/
+
+.titulo-pagina {
+    color: orangered;
+}
+
+.contenido-index {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1rem;
+}
+
+.parrafo-principal {
+    padding-left: 2rem;
+}
+
+.img-principal {
+    margin: 0 auto;
+}
+
+
+/*creatividad*/
+
+.parte-1,
+.parte-3,
+.parte-4,
+.ivg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.parte-2__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*casos*/
+
+.caso__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caso__img {
+    margin-top: 2rem;
+}
+
+
+/*investigacion*/
+
+.ivg__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ivg__img__esp {
+    height: 60rem;
+}
+
+.pregunta {
+    font-style: oblique;
+}
+
+.respuesta {
+    font-size: 1.8rem;
+}
